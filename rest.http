@@ -15,4 +15,18 @@ content-type: application/json
 
 }
 ###
-GET http://localhost:3000/songs/3.json
+GET http://localhost:3000/songs/4.json
+###
+PATCH http://localhost:3000/songs/4.json
+content-type: application/json
+
+{
+
+  "title": "Seconf title",
+  "artist": "second artist",
+  "album": "album number 2",
+  "year": "2000"
+
+
+
+}
