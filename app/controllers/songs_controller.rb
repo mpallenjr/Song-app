@@ -14,5 +14,11 @@ class SongsController < ApplicationController
     new_song.save
     render json: new_song.as_json
   end
+
+  def show
+    the_id = params[:id]
+    show_song = Song.find_by(id: the_id)
+    render json: show_song.as_json
+  end
 end
 
